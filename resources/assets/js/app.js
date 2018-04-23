@@ -16,6 +16,8 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+Vue.component('oi-list', require('./components/OiList.vue'));
+
 Vue.component('item-list', require('./components/ItemList.vue'));
 Vue.component('item-create', require('./components/ItemCreate.vue'));
 Vue.component('item-show', require('./components/ItemShow.vue'));

@@ -15,4 +15,7 @@ Route::group(['middleware' => ['auth:web']], function() {
     Route::get('items/{uuid}', 'ItemController@show');
     Route::get('items/{uuid}/edit', 'ItemController@edit');
     Route::get('items/{uuid}/delete', 'ItemController@delete');
+
+    Route::get('tasks', 'TaskController@index')->name('tasks.index');
+
 });

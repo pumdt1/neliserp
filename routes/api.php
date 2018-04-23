@@ -6,4 +6,6 @@ Route::group(['middleware' => ['auth:api']], function() {
     Route::get('items/{item}', 'Api\ItemApi@show')->name('api.items.show');
     Route::patch('items/{item}', 'Api\ItemApi@update')->name('api.items.update');
     Route::delete('items/{item}', 'Api\ItemApi@destroy')->name('api.items.destroy');
+
+    Route::get('tasks', 'Api\TaskApi@index')->name('api.tasks.index');
 });
